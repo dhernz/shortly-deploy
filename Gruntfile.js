@@ -119,28 +119,20 @@ grunt.registerTask('server-dev', function (target) {
     grunt.task.run([ 'watch' ]);
   });
 
-  ////////////////////////////////////////////////////
-  // Main grunt tasks
-  ////////////////////////////////////////////////////
-
   grunt.registerTask('default', ['jshint', 'concat','mochaTest']);
 
-  // grunt.registerTask('test', [
-  //   'mochaTest'
+
+  // grunt.registerTask('build', [
   //   ]);
 
-  grunt.registerTask('build', [
-    ]);
-
-  grunt.registerTask('upload', function(n) {
-    if(grunt.option('prod')) {
-      // add your production server task here
-    } else {
-      grunt.task.run([ 'server-dev' ]);
-    }
-  });
+  // grunt.registerTask('upload', function(n) {
+  //   if(grunt.option('prod')) {
+      
+  //   } else {
+  //     grunt.task.run([ 'server-dev' ]);
+  //   }
+  // });
 
   grunt.registerTask('deploy', ['uglify']);
-
 
 };
