@@ -119,7 +119,7 @@ grunt.registerTask('server-dev', function (target) {
     grunt.task.run([ 'watch' ]);
   });
 
-  grunt.registerTask('default', ['jshint', 'concat','mochaTest']);
+  grunt.registerTask('default', ['jshint','mochaTest']);
 
 
   // grunt.registerTask('build', [
@@ -133,6 +133,6 @@ grunt.registerTask('server-dev', function (target) {
   //   }
   // });
 
-  grunt.registerTask('deploy', ['uglify']);
+  grunt.registerTask('deploy', ['uglify', 'concat']);
 
 };
