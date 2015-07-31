@@ -125,13 +125,13 @@ grunt.registerTask('server-dev', function (target) {
   grunt.registerTask('build', [
     ]);
 
-  // grunt.registerTask('upload', function(n) {
-  //   if(grunt.option('prod')) {
+  grunt.registerTask('upload', function(n) {
+    if(grunt.option('prod')) {
       
-  //   } else {
-  //     grunt.task.run([ 'server-dev' ]);
-  //   }
-  // });
+    } else {
+      grunt.task.run([ 'server-dev' ]);
+    }
+  });
 
   grunt.registerTask('deploy', ['uglify', 'concat']);
 
