@@ -122,8 +122,8 @@ grunt.registerTask('server-dev', function (target) {
   grunt.registerTask('default', ['jshint','mochaTest']);
 
 
-  // grunt.registerTask('build', [
-  //   ]);
+  grunt.registerTask('build', [
+    ]);
 
   // grunt.registerTask('upload', function(n) {
   //   if(grunt.option('prod')) {
